@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Oficial | IFPR TB Info</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="assets/css/store.css">
+</head>
+<body>
+
+    <header class="store-nav">
+        <div class="container nav-container">
+            <a href="#" class="brand">
+                <img src="assets/img/logo.png" alt="Logo Orca" class="brand-logo" onerror="this.src='https://via.placeholder.com/50x50?text=Orca'">
+                <div class="brand-text">
+                    <span class="title">STORE</span>
+                    <span class="subtitle">IFPR TB Info</span>
+                </div>
+            </a>
+            
+            <div class="nav-actions">
+                <a href="https://seusiteprincipal.com" class="back-link"><i class="ph ph-arrow-left"></i> Voltar ao Curso</a>
+                <button class="cart-toggle" id="cartOpenBtn">
+                    <i class="ph ph-shopping-cart"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="store-hero">
+        <div class="container center">
+            <span class="tech-tag">Coleção Oficial 2026</span>
+            <h1 class="hero-title">Vista o <span class="text-silver">Código.</span></h1>
+            <p class="hero-desc">Produtos exclusivos da turma de Informática para Internet. Toda a logística é feita sob demanda: você compra aqui e recebe direto em casa.</p>
+        </div>
+    </section>
+
+    <main class="container products-section">
+        <div class="products-grid" id="productsGrid">
+            </div>
+    </main>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h2>Seu Carrinho</h2>
+            <button class="close-cart" id="cartCloseBtn"><i class="ph ph-x"></i></button>
+        </div>
+        
+        <div class="cart-items" id="cartItemsContainer">
+            <div class="empty-cart-msg" id="emptyCartMsg">
+                <i class="ph ph-shopping-cart-simple"></i>
+                <p>Seu carrinho está vazio.</p>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total estimado:</span>
+                <strong id="cartTotalValue">R$ 0,00</strong>
+            </div>
+            <p class="shipping-note">O frete será calculado no checkout.</p>
+            <button class="btn-checkout" id="checkoutBtn">Finalizar Compra <i class="ph ph-lock-key"></i></button>
+        </div>
+    </aside>
+
+    <footer class="store-footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <img src="assets/img/logo.png" alt="Logo IFPR Info" class="footer-logo" onerror="this.style.display='none'">
+                <p>Informática para Internet<br>Campus Telêmaco Borba</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://instagram.com/ifprtb.info" target="_blank" class="ig-btn">
+                    <i class="ph ph-instagram-logo"></i> @ifprtb.info
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>
